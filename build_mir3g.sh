@@ -35,15 +35,15 @@ if [ $? -eq 0 ] ; then
 			--user $GIT_USER \
 			--repo $GIT_REPO_NAME \
 			--tag $RELEASE_NAME \
-			--name openwrt-ramips-mt7621-xiaomi_mir3g.manifest \
-			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mir3g.manifest
+			--name openwrt-ramips-mt7621-xiaomi_mi-router-3g.manifest \
+			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mi-router-3g.manifest
 			
 		github-release upload \
 			--user $GIT_USER \
 			--repo $GIT_REPO_NAME \
 			--tag $RELEASE_NAME \
-			--name openwrt-ramips-mt7621-xiaomi_mir3g-squashfs-rootfs0.bin \
-			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mir3g-squashfs-rootfs0.bin
+			--name openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-rootfs0.bin \
+			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-rootfs0.bin
 			
 		github-release upload \
 			--user $GIT_USER \
@@ -56,15 +56,15 @@ if [ $? -eq 0 ] ; then
 			--user $GIT_USER \
 			--repo $GIT_REPO_NAME \
 			--tag $RELEASE_NAME \
-			--name openwrt-ramips-mt7621-xiaomi_mir3g-squashfs-kernel1.bin \
-			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mir3g-squashfs-kernel1.bin
+			--name openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-kernel1.bin \
+			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-kernel1.bin
 			
 		github-release upload \
 			--user $GIT_USER \
 			--repo $GIT_REPO_NAME \
 			--tag $RELEASE_NAME \
-			--name openwrt-ramips-mt7621-xiaomi_mir3g-squashfs-sysupgrade.bin \
-			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mir3g-squashfs-sysupgrade.bin
+			--name openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-sysupgrade.bin \
+			--file bin/targets/ramips/mt7621/openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-sysupgrade.bin
 	else
 		echo "Skip github release uploading"
 	fi
